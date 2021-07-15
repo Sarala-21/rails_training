@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @profiledetail.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @profiledetail.last_name %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @profiledetail.education %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @profiledetail.experience %>
+</p>
+
+<p>
+  <strong>Resume:</strong>
+  <%= image_tag @profiledetail.resume.url %>
+</p>
+
+<%= link_to 'Edit', edit_profiledetail_path(@profiledetail) %> |
+<%= link_to 'Back', profiledetails_path %>
