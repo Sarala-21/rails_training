@@ -13,7 +13,7 @@ class ProfiledetailsController < ApplicationController
 
   # GET /profiledetails/new
   def new
-       user = current_user
+    user = current_user
     @profiledetail = user.profiledetail || Profiledetail.new
    end
 
